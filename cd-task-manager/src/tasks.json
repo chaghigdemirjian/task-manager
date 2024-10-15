@@ -1,24 +1,34 @@
 {
   "tasks": [
     {
-      "id": "c61d",
-      "title": "Testing 5!!",
-      "description": "Testing edit functionality"
-    },
-    {
-      "id": "eb6a",
-      "title": "garo",
-      "description": "is the best !!!"
-    },
-    {
-      "id": "df9c",
-      "title": "success",
-      "description": "success??"
-    },
-    {
       "id": "3cb8",
-      "title": "what's up",
-      "description": "hello"
+      "title": "Tmobile",
+      "description": "Disable 360 insurance, and connect bank for $5 savings per bill",
+      "priority": "Quick Tasks"
+    },
+    {
+      "id": "47d2",
+      "title": "NYC move",
+      "description": "gut feeling, packages, roommates, housing ",
+      "priority": "Long-Term Important"
+    },
+    {
+      "id": "c96d",
+      "title": "Arizona",
+      "description": "Pack",
+      "priority": "Urgent & Important"
+    },
+    {
+      "id": "f4a1",
+      "title": "Contributing",
+      "description": "Help friends find jobs",
+      "priority": "Nice to Have"
+    },
+    {
+      "id": "a9b2",
+      "title": "Shopping ",
+      "description": "Scotch & Soda sale",
+      "priority": "Urgent Unimportant"
     }
   ]
 }

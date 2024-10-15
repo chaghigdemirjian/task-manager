@@ -10,6 +10,7 @@ const EditTask = ( {editTask} ) => {
 
   const [title, setTitle] = useState(task.title)
   const [description, setDescription] = useState(task.description)
+  const [priority, setPriority] = useState(task.priority)
 
   const { id } = useParams()
   const navigate = useNavigate()
@@ -20,7 +21,8 @@ const EditTask = ( {editTask} ) => {
     const updatedTask = {
       id, 
       title, 
-      description
+      description,
+      priority
     }
 
     editTask(updatedTask)
@@ -48,6 +50,26 @@ const EditTask = ( {editTask} ) => {
               value={title}
               onChange={(e) => setTitle(e.target.value)}
             />
+          </div>
+
+          <div className="mb-4">
+              <label className="block text-gray-700 font-bold mb-2" htmlFor="priority">
+                Task priority  
+              </label>
+              <select
+                id="priority"
+                name="priority  "
+                className="border rounded w-full py-2 px-3"
+                required
+                value={priority}
+                onChange={(e) => setPriority(e.target.value)}
+              >
+                <option value="Urgent & Important">Urgent & Important</option>
+                <option value="Long-Term Important">Long-Term Important</option>
+                <option value="Quick Tasks">Quick Tasks</option>
+                <option value="Nice to Have">Nice to Have</option>
+                <option value="Urgent Unimportant">Urgent Unimportant</option>
+              </select>
           </div>
 
           <div className="mb-4">

@@ -6,6 +6,7 @@ const Task = ({ task, onDelete }) => {
 
   return (
     <div className="bg-blue-100 rounded-lg shadow-lg p-4 mb-4 transition-transform transform hover:scale-105 min-h-[80px]">
+            <h1 className="absolute top-2 right-2 bg-gray-100 text-black px-2 py-1 rounded-md shadow-md">{task.priority}</h1>
             <h3 className="text-xl font-bold">{task.title}</h3>
             <p className="mb-5">{task.description}</p>
             <button 

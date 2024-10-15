@@ -7,6 +7,7 @@ const AddTask = ( {addTaskSubmit} ) => {
 
   const [title, setTitle] = useState('')
   const [description, setDescription] = useState('')
+  const [priority, setPriority] = useState('Urgent & Important')
 
   const navigate = useNavigate()
 
@@ -15,7 +16,8 @@ const AddTask = ( {addTaskSubmit} ) => {
 
     const newTask = {
       title, 
-      description
+      description, 
+      priority,
     }
 
     try {
@@ -53,7 +55,27 @@ const AddTask = ( {addTaskSubmit} ) => {
           </div>
 
           <div className="mb-4">
-            <label className="block text-gray-700 font-bold mb-2" htmlFor="title">
+              <label className="block text-gray-700 font-bold mb-2" htmlFor="priority">
+                Task priority  
+              </label>
+              <select
+                id="priority"
+                name="priority"
+                className="border rounded w-full py-2 px-3"
+                required
+                value={priority}
+                onChange={(e) => setPriority(e.target.value)}
+              >
+                <option value="Urgent & Important">Urgent & Important</option>
+                <option value="Long-Term Important">Long-Term Important</option>
+                <option value="Quick Tasks">Quick Tasks</option>
+                <option value="Nice to Have">Nice to Have</option>
+                <option value="Urgent Unimportant">Urgent Unimportant</option>
+              </select>
+          </div>
+
+          <div className="mb-4">
+            <label className="block text-gray-700 font-bold mb-2" htmlFor="description">
               Task Description
             </label>
 
