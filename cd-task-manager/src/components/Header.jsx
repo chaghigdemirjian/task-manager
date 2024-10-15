@@ -11,7 +11,7 @@ const Header = () => {
             <nav>
                 <ul className="flex space-x-4">
                     <li className="hover: text-white-400 cursor-pointer">
-                      <Link to='/add-task'>Add Task</Link>
+                      <Link to='/add-task'>Add New Task</Link>
                     </li>
                     <li className="hover: text-white-400 cursor-pointer">
                       <Link to='/completed-tasks'>Completed Tasks</Link>

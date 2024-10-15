@@ -1,8 +1,9 @@
 import React from 'react'
 import {useState, useEffect} from 'react'
 import Task from './Task'
+import { toast } from 'react-toastify';
 
-const TaskList = () => {
+const TaskList = ( {deleteTask} ) => {
 
     const [tasks, setTasks] = useState([])
     const [loading, setLoading] = useState(true)
@@ -22,6 +23,14 @@ const TaskList = () => {
         fetchTasks()
     }, [])
 
+    const handleDelete = async (id) => {
+      const confirm = window.confirm('Are you sure you want to delete this task?')
+      if (!confirm) return 
+      deleteTask(id)
+      setTasks((prevTasks) => prevTasks.filter((task) => task.id !== id));
+      toast.success('Task Deleted Successfully!')
+    }
+
   return (
     <>
         <div className="container mx-auto p-4">
@@ -34,7 +43,7 @@ const TaskList = () => {
                 : (
                     <div className="flex flex-col gap-4">
                     {tasks.map((task) => (
-                        <Task key={task.id} task={task} />)
+                        <Task key={task.id} task={task} onDelete={handleDelete}/>)
                     )}
                     </div>
                 )
