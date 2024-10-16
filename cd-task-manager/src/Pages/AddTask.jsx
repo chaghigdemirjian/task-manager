@@ -29,8 +29,6 @@ const AddTask = ( {addTaskSubmit} ) => {
     } catch (error) {
       console.error('error adding task', error)
     }
-
-    
   }
 
   return (

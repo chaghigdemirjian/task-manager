@@ -15,7 +15,6 @@ const Task = ({ task, onDelete }) => {
                 delete
             </button>
             <button 
-            // onClick={() => onDelete(task.id)}
             className="ml-2 bg-green-700 text-white px-1 py-1 rounded hover:bg-red-800">
               <Link to={`/edit-task/${task.id}`}>edit</Link>
             </button>

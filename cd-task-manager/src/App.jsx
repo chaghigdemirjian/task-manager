@@ -8,7 +8,6 @@ import {
 import MainLayout from './Layout/MainLayout'
 import HomePage from './Pages/HomePage'
 import AddTask from './Pages/AddTask'
-import CompletedTasks from './Pages/CompletedTasks'
 import EditTask from './Pages/EditTask'
 import Task from './components/Task'
 
@@ -44,6 +43,7 @@ const App = () => {
       })
     }
 
+    // Fetch details of a specific task
     const taskLoader = async ({ params }) => {
       const res = await fetch(`http://localhost:5000/tasks/${params.id}`)
       const data = await res.json()
@@ -56,7 +56,6 @@ const App = () => {
         <Route index element = {<HomePage deleteTask={deleteTask}/>}/>    
         <Route path='/add-task' element = {<AddTask addTaskSubmit={addNewTask}/>}/>
         <Route path='/edit-task/:id' element = {<EditTask editTask={editTask}/>} loader={taskLoader}/>
-        <Route path='/completed-tasks' element = {<CompletedTasks />}/>
       </Route>
     )
   )

@@ -47,24 +47,26 @@ const TaskList = ( {deleteTask} ) => {
   return (
     <>
         <div className="container mx-auto p-4">
-            { loading ? (
-                <div> loading... </div>
-            ) : (
-                groupedTasks.map(({priority, tasks}) => ( // including ({priority, tasks} allows you access to priority and task of each group down below vs saying group.priority / group.tasks
-                    <div key={priority} className="mb-8">
-                        <h3 className="text-xl font-semibold text-left mb-2">{priority}</h3>
-                        {tasks.length === 0 ? (
-                            <div className="text-gray-500"> No tasks available </div>
-                        ) : ( 
-                            <div className="flex flex-col gap-4"> 
-                            {tasks.map((task) => (
-                                <Task key={task.id} task={task} onDelete={handleDelete} />
-                            ))} 
-                            </div>
-                        )}
-                    </div>
-                ))
-            )}
+            <h2 className="text-2xl font-bold text-left mb-2">To Dos</h2>
+            <div className="border-b-2 border-gray-300 mb-4"></div>
+                { loading ? (
+                    <div> loading... </div>
+                ) : (
+                    groupedTasks.map(({priority, tasks}) => ( // including ({priority, tasks} allows you access to priority and task of each group down below vs saying group.priority / group.tasks
+                        <div key={priority} className="mb-8">
+                            <h3 className="text-xl font-semibold text-left mb-2 text-gray-800">{priority}</h3>
+                            {tasks.length === 0 ? (
+                                <div className="text-gray-500"> No tasks available </div>
+                            ) : ( 
+                                <div className="flex flex-col gap-4"> 
+                                {tasks.map((task) => (
+                                    <Task key={task.id} task={task} onDelete={handleDelete} />
+                                ))} 
+                                </div>
+                            )}
+                        </div>
+                    ))
+                )}
         </div>
     </>
   )
