@@ -7,7 +7,7 @@ const AddTask = ( {addTaskSubmit} ) => {
 
   const [title, setTitle] = useState('')
   const [description, setDescription] = useState('')
-  const [priority, setPriority] = useState('Urgent & Important')
+  const [priority, setPriority] = useState('Urgent')
 
   const navigate = useNavigate()
 
@@ -64,11 +64,10 @@ const AddTask = ( {addTaskSubmit} ) => {
                 value={priority}
                 onChange={(e) => setPriority(e.target.value)}
               >
-                <option value="Urgent & Important">Urgent & Important</option>
-                <option value="Long-Term Important">Long-Term Important</option>
-                <option value="Quick Tasks">Quick Tasks</option>
+                <option value="Near-Term">Near-Term</option>
+                <option value="Long-Term">Long-Term</option>
+                <option value="Quick Ones">Quick Ones</option>
                 <option value="Nice to Have">Nice to Have</option>
-                <option value="Urgent Unimportant">Urgent Unimportant</option>
               </select>
           </div>
 

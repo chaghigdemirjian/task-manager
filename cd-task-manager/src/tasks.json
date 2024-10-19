@@ -1,40 +1,102 @@
 {
   "tasks": [
     {
-      "id": "3cb8",
-      "title": "Tmobile",
-      "description": "Disable 360 insurance, and connect bank for $5 savings per bill",
-      "priority": "Quick Tasks"
+      "id": "8802",
+      "title": "CS Project",
+      "description": "Build Django Backend, add reminders to the app, add drag and drop functionality, ",
+      "priority": "Near-Term",
+      "order": 0
     },
     {
-      "id": "47d2",
+      "id": "1aec",
+      "title": "Job Search ",
+      "description": "Storyline for networking ",
+      "priority": "Near-Term",
+      "order": 1
+    },
+    {
+      "id": "e806",
+      "title": "Career Exploration",
+      "description": "Networking calls / research ",
+      "priority": "Near-Term",
+      "order": 2
+    },
+    {
+      "id": "2b12",
+      "title": "Job Search ",
+      "description": "Part time-ish role that fits your interest (researching and understanding complex systems, wearing different hats, etc)",
+      "priority": "Near-Term",
+      "order": 3
+    },
+    {
+      "id": "1553",
+      "title": "Travels",
+      "description": "Pack for Arizona",
+      "priority": "Near-Term",
+      "order": 4
+    },
+    {
+      "id": "6aa0",
+      "title": "iPhone",
+      "description": "complete repair claim / link bank for $5 saving",
+      "priority": "Near-Term",
+      "order": 5
+    },
+    {
+      "id": "6152",
+      "title": "Financial management ",
+      "description": "S&P index + few stocks that you like. take a first meeting with financial advisor, look at chatgpt outputs here",
+      "priority": "Long-Term",
+      "order": 0
+    },
+    {
+      "id": "c5d8",
+      "title": "Password Management ",
+      "description": "ongoing: continue strengthening passwords. coinbase change, binance (disconnect bank?), others",
+      "priority": "Long-Term",
+      "order": 1
+    },
+    {
+      "id": "b6af",
+      "title": "CS Learning ",
+      "description": "operating systems class, AI/ML class, using cursor AI,  claude, replit",
+      "priority": "Long-Term",
+      "order": 2
+    },
+    {
+      "id": "814d",
       "title": "NYC move",
-      "description": "gut feeling, packages, roommates, housing ",
-      "priority": "Long-Term Important"
+      "description": "downsize packages, shipping options (check notes on phone), decide internally if it's a yes?, roommate confirmation (Gauree + X?), housing search",
+      "priority": "Long-Term",
+      "order": 3
     },
     {
-      "id": "c96d",
-      "title": "Arizona",
-      "description": "Pack",
-      "priority": "Urgent & Important"
+      "id": "1097",
+      "title": "Speedo ",
+      "description": "Check on refund",
+      "priority": "Quick Tasks",
+      "order": 0
     },
     {
-      "id": "f4a1",
-      "title": "Contributing",
-      "description": "Help friends find jobs",
-      "priority": "Nice to Have"
+      "id": "8488",
+      "title": "Speedo",
+      "description": "Look out for refund ",
+      "priority": "Quick Ones",
+      "order": 1
     },
     {
-      "id": "a9b2",
-      "title": "Shopping ",
-      "description": "Scotch & Soda sale",
-      "priority": "Urgent Unimportant"
+      "id": "ca68",
+      "title": "dasf",
+      "description": "dssfasd",
+      "priority": "Quick Ones",
+      "order": 0
     },
     {
-      "id": "654b",
-      "title": "Career decision",
-      "description": "are we going to continue pursuing CS route?",
-      "priority": "Long-Term Important"
+      "id": "4508",
+      "title": "Friend Intro",
+      "description": "Rachel and Gauree",
+      "priority": "Nice to Have",
+      "order": 0
     }
   ]
 }
