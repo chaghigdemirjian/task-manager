@@ -15,7 +15,7 @@ const App = () => {
 
     // Add new task 
     const addNewTask = async (newTask) => {
-      const res = await fetch('http://localhost:5000/tasks', {
+      const res = await fetch('/api/tasks', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
@@ -27,14 +27,14 @@ const App = () => {
 
     // Delete an existing task 
     const deleteTask = async (id) => {
-      const res = await fetch(`http://localhost:5000/tasks/${id}`, {
+      const res = await fetch(`/api/tasks/${id}`, {
         method: 'DELETE',
       })
     }
 
     // Edit existing task
     const editTask = async (task) => {
-      const res = await fetch(`http://localhost:5000/tasks/${task.id}`, {
+      const res = await fetch(`/api/tasks/${task.id}`, {
         method: 'PUT',
         headers: {
           'Content-Type': 'application/json'
@@ -45,7 +45,7 @@ const App = () => {
 
     // Fetch details of a specific task
     const taskLoader = async ({ params }) => {
-      const res = await fetch(`http://localhost:5000/tasks/${params.id}`)
+      const res = await fetch(`/api/tasks/${params.id}`)
       const data = await res.json()
       return data
     }

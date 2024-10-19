@@ -2,101 +2,69 @@
   "tasks": [
     {
       "id": "8802",
-      "title": "CS Project",
+      "title": "CS Final Project",
       "description": "Build Django Backend, add reminders to the app, add drag and drop functionality, ",
-      "priority": "Near-Term",
-      "order": 0
-    },
-    {
-      "id": "1aec",
-      "title": "Job Search ",
-      "description": "Storyline for networking ",
-      "priority": "Near-Term",
-      "order": 1
+      "priority": "Long-Term Important"
     },
     {
       "id": "e806",
       "title": "Career Exploration",
       "description": "Networking calls / research ",
-      "priority": "Near-Term",
-      "order": 2
+      "priority": "Near-Term Important"
     },
     {
       "id": "2b12",
       "title": "Job Search ",
       "description": "Part time-ish role that fits your interest (researching and understanding complex systems, wearing different hats, etc)",
-      "priority": "Near-Term",
-      "order": 3
-    },
-    {
-      "id": "1553",
-      "title": "Travels",
-      "description": "Pack for Arizona",
-      "priority": "Near-Term",
-      "order": 4
+      "priority": "Near-Term Important"
     },
     {
       "id": "6aa0",
       "title": "iPhone",
       "description": "complete repair claim / link bank for $5 saving",
-      "priority": "Near-Term",
-      "order": 5
+      "priority": "Near-Term Important"
     },
     {
       "id": "6152",
       "title": "Financial management ",
       "description": "S&P index + few stocks that you like. take a first meeting with financial advisor, look at chatgpt outputs here",
-      "priority": "Long-Term",
-      "order": 0
+      "priority": "Long-Term Important"
     },
     {
       "id": "c5d8",
       "title": "Password Management ",
       "description": "ongoing: continue strengthening passwords. coinbase change, binance (disconnect bank?), others",
-      "priority": "Long-Term",
-      "order": 1
+      "priority": "Long-Term Important"
     },
     {
       "id": "b6af",
       "title": "CS Learning ",
       "description": "operating systems class, AI/ML class, using cursor AI,  claude, replit",
-      "priority": "Long-Term",
-      "order": 2
+      "priority": "Long-Term Important"
     },
     {
       "id": "814d",
       "title": "NYC move",
       "description": "downsize packages, shipping options (check notes on phone), decide internally if it's a yes?, roommate confirmation (Gauree + X?), housing search",
-      "priority": "Long-Term",
-      "order": 3
+      "priority": "Long-Term Important"
     },
     {
       "id": "1097",
       "title": "Speedo ",
       "description": "Check on refund",
-      "priority": "Quick Tasks",
-      "order": 0
+      "priority": "Quick Tasks"
     },
     {
       "id": "8488",
       "title": "Speedo",
       "description": "Look out for refund ",
-      "priority": "Quick Ones",
-      "order": 1
+      "priority": "Quick Ones"
     },
     {
-      "id": "ca68",
-      "title": "dasf",
-      "description": "dssfasd",
-      "priority": "Quick Ones",
-      "order": 0
-    },
-    {
-      "id": "4508",
-      "title": "Friend Intro",
-      "description": "Rachel and Gauree",
-      "priority": "Nice to Have",
-      "order": 0
+      "id": "94ce",
+      "title": "grocery run",
+      "description": "get some milk and cream",
+      "priority": "Nice to Have"
     }
   ]
 }

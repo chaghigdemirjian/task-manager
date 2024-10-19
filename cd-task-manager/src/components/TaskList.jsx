@@ -9,9 +9,9 @@ const TaskList = ({ deleteTask }) => {
   useEffect(() => {
     const fetchTasks = async () => {
       try {
-        const res = await fetch('http://localhost:5000/tasks');
+        const res = await fetch('/api/tasks');
         const data = await res.json();
-        // Set tasks directly without sorting
+      
         setTasks(data);
       } catch (error) {
         console.error('Error fetching tasks:', error);
@@ -30,11 +30,11 @@ const TaskList = ({ deleteTask }) => {
     toast.success('Task Deleted Successfully!');
   };
 
-  const priorities = ['Near-Term', 'Long-Term', 'Quick Ones', 'Nice to Have'];
+  const priorities = ['Near-Term Important', 'Long-Term Important', 'Quick Ones', 'Nice to Have'];
 
   const priorityColors = {
-    'Near-Term': 'bg-cyan-100',
-    'Long-Term': 'bg-teal-100',
+    'Near-Term Important': 'bg-cyan-100',
+    'Long-Term Important': 'bg-teal-100',
     'Quick Ones': 'bg-purple-100',
     'Nice to Have': 'bg-pink-100',
   };
