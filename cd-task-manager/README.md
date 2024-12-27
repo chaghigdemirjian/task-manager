@@ -10,7 +10,6 @@ This is a simple, interactive To-Do List application built with **React**, **Vit
 
 - **Add New Tasks**: Easily create new tasks with the option to provide a title and description.
 - **Edit and Update Tasks**: Modify existing tasks by clicking the "edit" button.
-- **Mark Tasks as Completed**: Strike-through styling and real-time updates when tasks are marked as done.
 - **Delete Tasks**: Remove tasks from the list with confirmation.
 - **Responsive UI**: A clean and responsive design using **Tailwind CSS** for styling.
 - **Notifications**: Friendly toast notifications for actions like adding, updating, and deleting tasks using **React-Toastify**.
@@ -27,23 +26,19 @@ This is a simple, interactive To-Do List application built with **React**, **Vit
 
 ## Setup Instructions
 
-### Prerequisites
-
-- Node.js (v14 or higher)
-- npm or yarn
 
 ### Installation
 
 1. Clone the repository:
 
     ```bash
-    git clone https://github.com/yourusername/todo-app.git
+    git clone https://github.com/yourusername/task-manager.git
     ```
 
 2. Navigate to the project directory:
 
     ```bash
-    cd todo-app
+    cd-task-manager
     ```
 
 3. Install dependencies:
@@ -70,9 +65,16 @@ This is a simple, interactive To-Do List application built with **React**, **Vit
 
     ```bash
     npm run dev
-    ```
 
-3. Open your browser and go to `http://localhost:3000`.
+3. Start the Json development server:
+
+    ```bash
+    npm run server
+
+
+4. Open your browser and go to `http://localhost:3000`.
+5. Open your browser and go to `http://localhost:5000`.
+
 
 ### Proxy Configuration
 
@@ -84,6 +86,7 @@ To simplify API requests and avoid CORS issues, the Vite development server is c
 ### Available Scripts
 
 - `npm run dev`: Starts the development server.
+- `npm run server`: Starts the json server.
 - `npm run build`: Builds the app for production.
 - `npm run preview`: Preview the production build locally.
 

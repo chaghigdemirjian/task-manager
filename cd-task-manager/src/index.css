@@ -1,4 +1,11 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+/* The following @tailwind directives are used to include Tailwind CSS's pre-defined styles. */ 
+/* These directives allow the utility-first approach of Tailwind CSS, enabling you to style elements directly in HTML using utility classes. */ 
+
+/* tailwind base: applies Tailwind's base styles */
+/* tailwind components: includes any custom compoentns from tailwind */
+/* tailwind utilities: Loads Tailwind's utility classes (e.g., for margin, padding, color, flexbox) to be used in the HTML. */
+
+@tailwind base; 
+@tailwind components; 
+@tailwind utilities;  
 

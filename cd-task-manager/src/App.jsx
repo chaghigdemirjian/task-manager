@@ -1,10 +1,12 @@
-import React from 'react'
-import { 
-  Route,
-  createBrowserRouter,
-  createRoutesFromElements,
-  RouterProvider
+import React from 'react' // importing react library to build components 
+import { // importing react router for routing and navigation 
+  Route, // define routes 
+  createBrowserRouter, // create router insntance 
+  createRoutesFromElements, // generate route elements 
+  RouterProvider // provide the router to the app 
 } from 'react-router-dom'
+
+// custom components and pages 
 import MainLayout from './Layout/MainLayout'
 import HomePage from './Pages/HomePage'
 import AddTask from './Pages/AddTask'
@@ -13,7 +15,7 @@ import Task from './components/Task'
 
 const App = () => {
 
-    // Add new task 
+    // Function to add a new task via POST request to the API.
     const addNewTask = async (newTask) => {
       const res = await fetch('/api/tasks', {
         method: 'POST',
@@ -25,14 +27,14 @@ const App = () => {
       return
     }
 
-    // Delete an existing task 
+    // Function to delete a task by its ID via a DELETE request.  
     const deleteTask = async (id) => {
       const res = await fetch(`/api/tasks/${id}`, {
         method: 'DELETE',
       })
     }
 
-    // Edit existing task
+    // Function to edit an existing task via a put request to the API. 
     const editTask = async (task) => {
       const res = await fetch(`/api/tasks/${task.id}`, {
         method: 'PUT',
@@ -43,13 +45,14 @@ const App = () => {
       })
     }
 
-    // Fetch details of a specific task
+    // Loader function to fetch task details for editting. 
     const taskLoader = async ({ params }) => {
       const res = await fetch(`/api/tasks/${params.id}`)
       const data = await res.json()
       return data
     }
 
+  // setting up routes with react router.
   const router = createBrowserRouter(
     createRoutesFromElements(
       <Route path = '/' element = {<MainLayout />}>
@@ -59,6 +62,8 @@ const App = () => {
       </Route>
     )
   )
+ 
+  // this return statement renders the RouterProvider component which makes React Router's routing system available in the app.  
   return <RouterProvider router={router}/>
 }
 export default App

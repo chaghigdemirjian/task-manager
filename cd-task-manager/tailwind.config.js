@@ -1,8 +1,8 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: [
-    "./index.html",
-    "./src/**/*.{js,ts,jsx,tsx}",
+  content: [ 
+    "./index.html", // program will look for tailwind classes in index.html. 
+    "./src/**/*.{js,ts,jsx,tsx}", // and anything in src folder with these extentions.
   ],
   theme: {
     extend: {

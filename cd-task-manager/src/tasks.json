@@ -1,33 +1,29 @@
 {
+  // This JSON file simulates a mock backend for task management.
+  // It contains a list of tasks with their details, mimicking a task database.
+  // Each task includes:
+  // - id: A unique identifier for the task (used to reference the task in operations like update or delete).
+  // - title: A short name or title summarizing the task.
+  // - description: A more detailed explanation of what the task involves.
+  // - priority: The priority level of the task, which helps categorize its urgency (e.g., "Near-Term Important", "Long-Term Important", "Quick Tasks").
+  // 
+  // This mock data is useful for simulating interactions with a backend in development,
+  // allowing front-end components (e.g., React app) to display and interact with task data before a real backend is implemented.
+  //
+  // The tasks are organized based on their priority, with some tasks labeled as quick ones (e.g., meditation).
+  // and others requiring more long-term attention (e.g., financial management).
+  
   "tasks": [
     {
-      "id": "8802",
-      "title": "CS Final Project",
-      "description": "Build Django Backend, add reminders to the app, add drag and drop functionality, ",
-      "priority": "Long-Term Important"
-    },
-    {
       "id": "e806",
-      "title": "Career Exploration",
-      "description": "Networking calls / research ",
-      "priority": "Near-Term Important"
-    },
-    {
-      "id": "2b12",
-      "title": "Job Search ",
-      "description": "Part time-ish role that fits your interest (researching and understanding complex systems, wearing different hats, etc)",
-      "priority": "Near-Term Important"
-    },
-    {
-      "id": "6aa0",
-      "title": "iPhone",
-      "description": "complete repair claim / link bank for $5 saving",
+      "title": "CS Projects ",
+      "description": "Build backend for task app and deploy to cloud",
       "priority": "Near-Term Important"
     },
     {
       "id": "6152",
       "title": "Financial management ",
-      "description": "S&P index + few stocks that you like. take a first meeting with financial advisor, look at chatgpt outputs here",
+      "description": "Invest $50-$100k into a few indices ",
       "priority": "Long-Term Important"
     },
     {
@@ -43,16 +39,22 @@
       "priority": "Quick Tasks"
     },
     {
-      "id": "8488",
-      "title": "Speedo",
-      "description": "Look out for refund ",
-      "priority": "Quick Ones"
+      "id": "8726",
+      "title": "Health Insurance ",
+      "description": "Apply to Medical",
+      "priority": "Near-Term Important"
     },
     {
-      "id": "94ce",
-      "title": "grocery run",
-      "description": "get some milk and cream",
-      "priority": "Nice to Have"
+      "id": "4876",
+      "title": "Theory / Leetcode ",
+      "description": "Spend a few hours a week on this (main priority should be building projects)",
+      "priority": "Near-Term Important"
+    },
+    {
+      "id": "3d50",
+      "title": "Meditation ",
+      "description": "10 minutes, 1-2 times per day ",
+      "priority": "Quick Ones"
     }
   ]
 }
