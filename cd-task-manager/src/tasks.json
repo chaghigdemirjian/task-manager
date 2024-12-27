@@ -1,18 +1,4 @@
 {
-  // This JSON file simulates a mock backend for task management.
-  // It contains a list of tasks with their details, mimicking a task database.
-  // Each task includes:
-  // - id: A unique identifier for the task (used to reference the task in operations like update or delete).
-  // - title: A short name or title summarizing the task.
-  // - description: A more detailed explanation of what the task involves.
-  // - priority: The priority level of the task, which helps categorize its urgency (e.g., "Near-Term Important", "Long-Term Important", "Quick Tasks").
-  // 
-  // This mock data is useful for simulating interactions with a backend in development,
-  // allowing front-end components (e.g., React app) to display and interact with task data before a real backend is implemented.
-  //
-  // The tasks are organized based on their priority, with some tasks labeled as quick ones (e.g., meditation).
-  // and others requiring more long-term attention (e.g., financial management).
-  
   "tasks": [
     {
       "id": "e806",

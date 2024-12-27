@@ -13,6 +13,9 @@ import AddTask from './Pages/AddTask'
 import EditTask from './Pages/EditTask'
 import Task from './components/Task'
 
+import { ToastContainer } from 'react-toastify' // Importing ToastContainer for rendering toast notifications.
+import 'react-toastify/dist/ReactToastify.css' // Importing the Toastify CSS styles for toast notifications.
+
 const App = () => {
 
     // Function to add a new task via POST request to the API.
@@ -52,7 +55,7 @@ const App = () => {
       return data
     }
 
-  // setting up routes with react router.
+  // setting up routes with react router, passing functions as props to appropriate components. 
   const router = createBrowserRouter(
     createRoutesFromElements(
       <Route path = '/' element = {<MainLayout />}>
@@ -64,6 +67,11 @@ const App = () => {
   )
  
   // this return statement renders the RouterProvider component which makes React Router's routing system available in the app.  
-  return <RouterProvider router={router}/>
+  return (
+    <>
+      <RouterProvider router={router}/>
+      <ToastContainer/>  {/* Render Toast notifications in the container at the bottom */}
+    </>
+  )
 }
 export default App
