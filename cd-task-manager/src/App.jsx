@@ -40,7 +40,7 @@ const App = () => {
     // Function to edit an existing task via a put request to the API. 
     const editTask = async (task) => {
       const res = await fetch(`/api/tasks/${task.id}`, {
-        method: 'PUT',
+        method: 'PATCH',
         headers: {
           'Content-Type': 'application/json'
         }, 
