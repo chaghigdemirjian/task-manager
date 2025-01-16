@@ -4,6 +4,7 @@ import Task from './Task'; // importing task component to display individual tas
 import { toast } from 'react-toastify'; // importing toast for notifications. 
 
 const TaskList = ({ deleteTask }) => { // deleteTask is passed down as a prop.   
+  
   const [tasks, setTasks] = useState([]); // state to hold the list of tasks.  
   const [loading, setLoading] = useState(true); // state to handle loading state. 
 
@@ -22,7 +23,7 @@ const TaskList = ({ deleteTask }) => { // deleteTask is passed down as a prop.
       }
     };
     fetchTasks(); // calling the fetchTasks function to actually fetch the tasks. 
-  }, []); // The empty dependency array ensures this runs only once when the component mounts. 
+  }, [tasks]); // The empty dependency array ensures this runs only once when the component mounts. 
 
   // function to handle deleting a task. 
   const handleDelete = async (id) => {
@@ -30,7 +31,7 @@ const TaskList = ({ deleteTask }) => { // deleteTask is passed down as a prop.
     if (!confirm) return; // if user cancels, exit the function. 
     deleteTask(id); // calling the deleteTask function passed as a prop to delete the task.
     setTasks((prevTasks) => prevTasks.filter((task) => task.id !== id)); // update the state by removing the task with the specified id.
-    toast.success('Task Deleted Successfully!'); // showing a success toast message.  
+    toast.success('Task Deleted Successfully!'); // showing a success toast message. 
   };
 
    // defining the priority categories for the tasks. 

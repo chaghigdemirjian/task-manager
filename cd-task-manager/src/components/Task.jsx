@@ -14,14 +14,14 @@ const Task = ({ task, onDelete, color }) => {
             <p className="text-sm mb-5">{task.description}</p>  
              {/* Button to delete the task, invokes the onDelete handler with the task's id */}
             <button 
-            onClick={() => onDelete(task.id)}
+            onClick={() => onDelete(task._id)}
             className="text-sm bg-blue-700 text-white px-1 py-1 rounded hover:bg-red-800">
                 delete
             </button>
              {/* Button to edit the task, links to an edit page using React Router */}
             <button 
             className="text-sm ml-2 bg-green-700 text-white px-1 py-1 rounded hover:bg-red-800">
-              <Link to={`/edit-task/${task.id}`}>edit</Link>
+              <Link to={`/edit-task/${task._id}`}>edit</Link>
             </button>
     </div>  
   )

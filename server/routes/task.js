@@ -38,9 +38,9 @@ router.get("/:id", async (req, res) => {
 
     let result = await collection.findOne(query);
     
-    if (!result) res.status(404).send("Not Found");
+    if (!result) res.status(404).json({ message: "Not Found"});
 
-    else res.status(200).send(result);
+    else res.status(200).json(result);
 });
 
 // this section will enable creating a new record. 
@@ -74,7 +74,7 @@ router.patch("/:id", async (req, res) => {
     
         let collection = await db.collection("tasks"); 
         let result = await collection.updateOne(query, updates);
-        res.status(200).send(result);
+        res.status(200).json({result});
     } catch (err) {
         console.error(err);
         res.status(500).send("Error updating record");
