@@ -28,7 +28,7 @@ const EditTask = ( {editTask} ) => { // edit task function is passed as a prop f
     }
 
     editTask(updatedTask) // call edit task function (passed via prop) in backend.  
-    toast.success('Task editted successfully!') // show success notification. 
+    toast.success('Task Editted successfully!') // show success notification. 
     return  navigate('/') // redirect to home page after successful submission. 
 
   }
