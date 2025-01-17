@@ -25,7 +25,7 @@ const AddTask = ( {addTaskSubmit} ) => { // addTaskSubmit is passed as a prop fr
       // Call the addTaskSubmit function passed via props to add the new task.
       await addTaskSubmit(newTask) 
     
-      toast.success('Task Added Successfully!')
+      toast.success('Task added Successfully!')
       navigate('/')
 
     } catch (error) {
